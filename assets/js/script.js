@@ -20,7 +20,7 @@ function getWeatherEmoji(weather) {
 }
 
 function fetchWeatherData(cityName) {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     $.ajax({
         url: url,
